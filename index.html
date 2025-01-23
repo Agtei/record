@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Pairs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <div class="words">
+            <p style="margin-top: 0px;"> <span id="englishWord"></span></p>
+            <p style="margin-top: 0px;"> <span id="ukrainianWord"></span></p>
+        </div>
+        <div class="buttons">
+            <button onclick="speakEnglish()">Speak English</button>
+            <button onclick="speakUkrainian()">Speak Ukrainian</button>
+            <button onclick="nextPair()">Next Pair</button>
+            <button onclick="stopAudio()">Stop</button>
+            <button onclick="toggleAutoPlay()">Auto Play</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
